@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Render App
         run: |
-          curl -s -o /dev/null -w "%{http_code}" http://server-naav.onrender.com/api/health
+          curl -s -o /dev/ https://server-3xn9.onrender.com/api/health
