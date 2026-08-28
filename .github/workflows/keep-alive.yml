@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Render App
         run: |
-          curl -s -o /dev/ https://server-3xn9.onrender.com/api/health
+          curl -sS --max-time 60 -o /dev/null -w "%{http_code}" https://server-3xn9.onrender.com/api/health | grep -q 200
